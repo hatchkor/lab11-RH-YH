@@ -1,4 +1,12 @@
 import math
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    math.hypot(a, b)
+
 def add(a, b):
     return a + b
 
@@ -15,9 +23,10 @@ def div(a, b):
 
 def log(a, b):
     try:
-        return math.log(b, a)
+        math.log(b, a)
     except ValueError as e:
         print(f"{e} for a or b results in undefined output.")
+    math.log(b, a)
 
 def exp(a, b):
     return a**b
