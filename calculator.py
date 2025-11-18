@@ -6,7 +6,7 @@ def square_root(a):
     return math.sqrt(a)
 
 def hypotenuse(a, b):
-    math.hypot(a, b)
+    return math.hypot(a, b)
 
 def add(a, b):
     return a + b
@@ -27,10 +27,11 @@ def logarithm(a, b):
         math.log(b, a)
     except ValueError as e:
         print(f"{e} for a or b results in undefined output.")
-    math.log(b, a)
+    return math.log(b, a)
 
 def exp(a, b):
     return a**b
+
 
 
 
