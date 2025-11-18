@@ -23,10 +23,11 @@ def div(a, b):
     return b / a
 
 def logarithm(a, b):
-    try:
-        math.log(b, a)
-    except ValueError as e:
-        print(f"{e} for a or b results in undefined output.")
+    if a<= 0 or a == 1:
+        raise ValueError
+    if b <= 0:
+        raise ValueError
+
     return math.log(b, a)
 
 def exp(a, b):
